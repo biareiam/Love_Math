@@ -1,15 +1,57 @@
-function runGame() {}
+/* Code to be executed when the page has finished loading*/
+/* Code to be executed when the user clicks a button */
 
-function chackAnswer() {}
+// wait for the DOM to finish loading before running the game
+// Get the button ellements and add event listeners to them
 
-function calculateCorrectAnswer() {}
 
-function incrementScore() {}
+/* This code will only run once the DOM completely finished to load*/
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
 
-function incrementWrongAnswer() {}
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked Submit!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        })
+    }
+})
 
-function displayAdditionQuestion() {}
 
-function displaySubtractQuestion() {}
 
-function displayMultiplyQuestion() {}
+
+function runGame() {
+
+}
+
+function chackAnswer() {
+
+}
+
+function calculateCorrectAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
+function incrementWrongAnswer() {
+
+}
+
+function displayAdditionQuestion() {
+
+}
+
+function displaySubtractQuestion() {
+
+}
+
+function displayMultiplyQuestion() {
+
+}
