@@ -23,10 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+/**
+ * The main game "loop", called when the script is first loaded
+ * and afther the user's answer has been processed
+ */
 function runGame() {
+    // Creates two random numbers between 1 and 25, it does not include 25. It is rounded (floor)
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 
 }
+
 
 function chackAnswer() {
 
